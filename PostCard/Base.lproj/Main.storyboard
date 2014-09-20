@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="w9J-NO-q4u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="w9J-NO-q4u">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -101,12 +101,21 @@
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
-                                    <rect key="frame" x="16" y="165" width="153" height="30"/>
+                                    <rect key="frame" x="22" y="158" width="153" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="SendEmailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="k7M-eI-LjM"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAa-qC-m86">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="95" y="216" width="121" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -116,6 +125,7 @@
                                 <exclude reference="JKY-o8-lze"/>
                                 <exclude reference="dZV-Xg-1FT"/>
                                 <exclude reference="ohM-ai-wS0"/>
+                                <exclude reference="xAa-qC-m86"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -125,6 +135,7 @@
                                 <include reference="JKY-o8-lze"/>
                                 <include reference="dZV-Xg-1FT"/>
                                 <include reference="ohM-ai-wS0"/>
+                                <include reference="xAa-qC-m86"/>
                             </mask>
                         </variation>
                     </view>
@@ -136,6 +147,7 @@
                         <outlet property="enterNameTextField" destination="JKY-o8-lze" id="4Fk-dC-LDZ"/>
                         <outlet property="mailButton" destination="ohM-ai-wS0" id="TkV-Tc-fvP"/>
                         <outlet property="messageLabel" destination="naA-p8-4oT" id="bOt-bb-mQD"/>
+                        <outlet property="nameLabel" destination="xAa-qC-m86" id="vrZ-Dy-fT7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
